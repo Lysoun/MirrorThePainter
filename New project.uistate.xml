@@ -19,6 +19,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="3">TestLevel events</event-sheet>
         <event-sheet active="1" order="8">Level 3 events</event-sheet>
         <event-sheet order="9">SpeedThings</event-sheet>
+        <event-sheet order="0">BasicControls</event-sheet>
+        <event-sheet order="8">JumpThings</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -37,7 +39,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/SpeedMob/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/SpeedTile/" />
     </folders-expanded>
 </c2uistate>

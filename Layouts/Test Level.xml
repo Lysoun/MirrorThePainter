@@ -76,7 +76,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <MaxSpeed>200</MaxSpeed>
+                        <CurrentMaxSpeed>300</CurrentMaxSpeed>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
