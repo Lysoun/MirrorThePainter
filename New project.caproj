@@ -20,7 +20,6 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
-        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -158,11 +157,6 @@
         </object-type>
         <object-type name="BlackFinish" sid="534686231655094">
             <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Fade" sid="239227521777075">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
         </object-type>
         <object-type name="GreenFinish" sid="804332162215298">
             <plugin id="Text" />
