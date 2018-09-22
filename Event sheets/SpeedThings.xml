@@ -15,9 +15,6 @@
                 <action behavior="Platform" id="1" name="Set max speed" sid="981525077297336" type="Player">
                     <param id="0" name="Max Speed">2000</param>
                 </action>
-                <action id="-8" name="Set angle" sid="483497364113930" type="SpeedTile">
-                    <param id="0" name="Angle">45</param>
-                </action>
             </actions>
         </event-block>
     </events>
