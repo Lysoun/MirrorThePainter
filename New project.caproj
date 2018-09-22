@@ -167,6 +167,9 @@
         <object-type name="GreenFinish" sid="804332162215298">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Text" sid="274238726147568">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
