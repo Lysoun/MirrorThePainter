@@ -180,22 +180,24 @@
                 <action id="-26" name="Restart layout" sid="261307671360379" type="System" />
             </actions>
         </event-block>
+        <comment>Finishing the level when overlapping finish</comment>
         <event-block sid="583139792056195">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="659335162095308" type="Player">
+                <condition id="1" name="Is overlapping another object" sid="659335162095308" type="Player">
                     <param id="0" name="Object">BlackFinish</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Fade" id="1" name="Start fade" sid="563563872626220" type="BlackFinish" />
-            </actions>
-        </event-block>
-        <event-block sid="757836879726071">
-            <conditions>
-                <condition behavior="Fade" id="0" name="On fade-out finished" sid="107110962668473" type="BlackFinish" />
-            </conditions>
-            <actions>
-                <action id="-43" name="Go to next/previous layout" sid="444105172970811" type="System">
+                <action id="-15" name="Set visible" sid="342204847917220" type="BlackFinish">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="236244399230420" type="GreenFinish">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="703820920600788" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-43" name="Go to next/previous layout" sid="544942961065409" type="System">
                     <param id="0" name="Which">0</param>
                 </action>
             </actions>
