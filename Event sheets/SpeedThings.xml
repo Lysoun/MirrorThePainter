@@ -13,7 +13,7 @@
             </conditions>
             <actions>
                 <action id="6" name="Set speed" sid="981525077297336" type="Player">
-                    <param id="0" name="Speed">12000</param>
+                    <param id="0" name="Speed">Player.CurrentMaxSpeed * 2</param>
                 </action>
             </actions>
         </event-block>

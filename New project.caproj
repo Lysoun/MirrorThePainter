@@ -20,6 +20,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -55,7 +56,7 @@
         <object-type name="Player" sid="732164492519497">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="MaxSpeed" sid="139639846620271" type="number" />
+                <instance-variable name="CurrentMaxSpeed" sid="139639846620271" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="717124782784036">
@@ -147,6 +148,17 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="BlackFinish" sid="534686231655094">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="239227521777075">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="GreenFinish" sid="804332162215298">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -161,6 +173,7 @@
         <event-sheet>SpeedThings.xml</event-sheet>
         <event-sheet>Level1.xml</event-sheet>
         <event-sheet>TestLevel.xml</event-sheet>
+        <event-sheet>JumpThings.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
