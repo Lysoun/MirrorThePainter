@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 3 events</name>
     <events>
+        <include>JumpThings</include>
         <include>BasicControls</include>
         <include>SpeedThings</include>
     </events>

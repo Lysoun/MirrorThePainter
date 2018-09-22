@@ -4,48 +4,19 @@
     <name>SpeedThings</name>
     <events>
         <comment>Player faster on orange platforms</comment>
-        <event-block sid="279100933726108">
+        <event-block sid="730270441204074">
             <conditions>
-                <condition behavior="Platform" id="2" name="Is on floor" sid="125971424508605" type="Player" />
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="334829379580467">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="695945617498880" type="SpeedTile">
-                            <param id="0" name="Object">Player</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="1" name="Set max speed" sid="412925078747254" type="Player">
-                            <param id="0" name="Max Speed">600</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
-        <comment>Resetting the player&apos;s speed when colliding with other platforms</comment>
-        <event-block sid="364585522533941">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="345600215169772" type="Player">
-                    <param id="0" name="Object">SolidTile</param>
+                <condition id="0" name="On collision with another object" sid="607183844482112" type="SpeedTile">
+                    <param id="0" name="Object">Player</param>
                 </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="947683775878980" type="Player" />
             </conditions>
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="823171686256032" type="Player">
-                    <param id="0" name="Max Speed">300</param>
+                <action behavior="Platform" id="1" name="Set max speed" sid="981525077297336" type="Player">
+                    <param id="0" name="Max Speed">600</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="882364903559959">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="994895537549476" type="Player">
-                    <param id="0" name="Object">JumpThruTile</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="176609238222178" type="Player">
-                    <param id="0" name="Max Speed">300</param>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="192045399040168" type="Player">
+                    <param id="0" name="Acceleration">1100</param>
                 </action>
             </actions>
         </event-block>

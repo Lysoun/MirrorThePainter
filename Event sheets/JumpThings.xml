@@ -2,5 +2,70 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>JumpThings</name>
-    <events />
+    <events>
+        <event-block sid="392506551260484">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="659871612642113" type="JumpTile">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition behavior="Platform" id="10" inverted="1" name="Is by wall" sid="112433157905146" type="Player">
+                    <param id="0" name="Side">0</param>
+                </condition>
+                <condition behavior="Platform" id="10" inverted="1" name="Is by wall" sid="128297159516754" type="Player">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="463702891317817" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="100677037316994" type="Player">
+                    <param id="0" name="Jump strength">1100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237159156750278">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="565227582118305" type="Player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="617703594718721" type="Player">
+                    <param id="0" name="Jump strength">650</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="714312734401240">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="184439290714069" type="JumpTile">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="817644506445723" type="Player">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="343281785457366" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="611196515980493" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="Platform" id="2" name="Set acceleration" sid="578466920830368" type="Player">
+                    <param id="0" name="Acceleration">5000000</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="879058825760342" type="Player">
+                    <param id="0" name="Max Speed">450</param>
+                </action>
+                <action behavior="Platform" id="3" name="Set deceleration" sid="708651538945496" type="Player">
+                    <param id="0" name="Deceleration">0</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="759443871859206" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="998936359751266" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
