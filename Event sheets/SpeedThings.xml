@@ -9,11 +9,11 @@
                 <condition id="0" name="On collision with another object" sid="607183844482112" type="SpeedTile">
                     <param id="0" name="Object">Player</param>
                 </condition>
-                <condition behavior="Platform" id="0" name="Is moving" sid="975984770513374" type="Player" />
+                <condition behavior="Platform" id="2" name="Is on floor" sid="947683775878980" type="Player" />
             </conditions>
             <actions>
                 <action behavior="Platform" id="1" name="Set max speed" sid="981525077297336" type="Player">
-                    <param id="0" name="Max Speed">2000</param>
+                    <param id="0" name="Max Speed">Player.Platform.MaxSpeed*2</param>
                 </action>
             </actions>
         </event-block>
