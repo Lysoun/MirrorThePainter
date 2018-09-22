@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SpeedThings</name>
+    <events>
+        <comment>Player faster on orange platforms</comment>
+        <event-block sid="602072320431947">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="287140059961171" type="Player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="140203954110728" type="Player">
+                    <param id="0" name="Max Speed">3000</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

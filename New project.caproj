@@ -103,22 +103,6 @@
         <object-type name="Keyboard" sid="999389981704997">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="Text" sid="869131213037219">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Sprite" sid="167587254584265">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="966835492332417">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644253923615289" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Gamepad" sid="551871557214762">
             <plugin id="gamepad" />
         </object-type>
@@ -127,6 +111,29 @@
         </object-type>
         <object-type name="Mouse" sid="519470743466733">
             <plugin id="Mouse" />
+        </object-type>
+        <object-type name="SpeedMob" sid="553247678459585">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="MaxSpeed" sid="250199349502506" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="275048882270443">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="645040882649124">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878173964654822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpeedTile" sid="295784205276957">
+            <plugin id="TiledBg" />
+            <texture />
         </object-type>
         <object-type name="9patch" sid="357363368926619">
             <plugin id="NinePatch" />
@@ -165,8 +172,11 @@
         <layout>Layout 3.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>MenuEventSheet.xml</event-sheet>
+        <event-sheet>BasicControls.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
+        <event-sheet>SpeedThings.xml</event-sheet>
+        <event-sheet>Level1.xml</event-sheet>
+        <event-sheet>TestLevel.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
