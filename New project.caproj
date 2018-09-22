@@ -139,18 +139,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
-        <object-type name="SpeedTile" sid="295784205276957">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="614469109160118">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture />
-        </object-type>
-=======
->>>>>>> 592ec0d2a6bd915ee81823dc589a4e89f8b6baad
         <object-type name="9patch" sid="357363368926619">
             <plugin id="NinePatch" />
             <texture />
@@ -171,18 +159,8 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-<<<<<<< HEAD
-        <object-type name="Sprite" sid="993761561398688">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780222791203323" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-=======
         <object-type name="GreenFinish" sid="804332162215298">
             <plugin id="Text" />
->>>>>>> 592ec0d2a6bd915ee81823dc589a4e89f8b6baad
         </object-type>
     </object-folder>
     <families />
@@ -197,15 +175,9 @@
         <event-sheet>BasicControls.xml</event-sheet>
         <event-sheet>Menu.xml</event-sheet>
         <event-sheet>SpeedThings.xml</event-sheet>
-<<<<<<< HEAD
         <event-sheet>Level1 events.xml</event-sheet>
         <event-sheet>TestLevel events.xml</event-sheet>
         <event-sheet>Level 3 events.xml</event-sheet>
-=======
-        <event-sheet>Level1.xml</event-sheet>
-        <event-sheet>TestLevel.xml</event-sheet>
-        <event-sheet>JumpThings.xml</event-sheet>
->>>>>>> 592ec0d2a6bd915ee81823dc589a4e89f8b6baad
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="20" />
