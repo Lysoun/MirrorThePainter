@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>BasicControls</name>
+    <events>
+        <comment>Allow WASD as alternate controls to arrow keys.</comment>
+        <event-group description="" sid="866140068036568" title="WASD controls">
+            <sub-events>
+                <event-block any="1" sid="862101905788108">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="264848874009636" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="355080285269346" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="217854575476878">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="220882422955584" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="146213553773231" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="270411844083282">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="662545549199383" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="12" name="Fall through" sid="811992665659900" type="Player" />
+                    </actions>
+                </event-block>
+                <event-block sid="308588703140143">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="904768510847047" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="876238653368419" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Allow player to use game pad</comment>
+        <event-group description="" sid="899464241591743" title="Gamepad controls">
+            <sub-events>
+                <event-block any="1" sid="335626731368747">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="445267520305177" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="769365519786915" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="225057166249221">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="469657807765800" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="12" name="Fall through" sid="908636179632204" type="Player" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="650191708514695">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="603274618013026" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="645232480453343" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="136913882831330" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="785032470355661">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="401233082337059" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="104153521791775" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="337453866369715" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Mirror the player&apos;s image so they appear facing the right way when moving left or right.</comment>
+        <event-group description="" sid="406393746759485" title="Mirror">
+            <sub-events>
+                <event-block any="1" sid="454782824665480">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="376186695328530" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="995704177949836" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="231626740401203" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="413575158765916" type="Player">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="979712205934679">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="451135103836607" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                        <condition id="0" name="On key pressed" sid="878244616669797" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="128015552449837" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="7" name="Set mirrored" sid="192183792313064" type="Player">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>If the player falls off the bottom of the layout, restart the level.</comment>
+        <event-block sid="609677008065383">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="331543600140504" type="Player">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="261307671360379" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

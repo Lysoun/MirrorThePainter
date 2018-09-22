@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>MenuEventSheet</name>
+    <name>Menu</name>
     <events>
         <event-block sid="360066487793220">
             <conditions>
