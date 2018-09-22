@@ -13,13 +13,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Menu</layout>
         <layout order="3">Test Level</layout>
         <layout order="4">Level 1</layout>
-        <layout active="1" order="5">Level 2</layout>
+        <layout order="5">Level 2</layout>
         <layout order="8">Level 3</layout>
+        <layout order="10">Credits</layout>
         <event-sheet order="1">SpeedThings</event-sheet>
         <event-sheet order="2">TestLevel events</event-sheet>
         <event-sheet order="6">Level1 events</event-sheet>
         <event-sheet order="7">Level 3 events</event-sheet>
         <event-sheet order="9">BasicControls</event-sheet>
+        <event-sheet order="11">Credits</event-sheet>
+        <event-sheet active="1" order="12">Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
