@@ -24,6 +24,7 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Resetting the player&apos;s speed when colliding with other platforms</comment>
         <event-block sid="364585522533941">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="345600215169772" type="Player">
