@@ -145,6 +145,11 @@
         </object-type>
         <object-type name="SpeedTile" sid="311740800479668">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="256653083132262">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666622668779521" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -180,13 +185,13 @@
         <event-sheet>Level 3 events.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="20" />
-        <global-instance type="Gamepad" uid="22">
+        <global-instance type="Keyboard" uid="24" />
+        <global-instance type="Gamepad" uid="45">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="Mouse" uid="24" />
+        <global-instance type="Mouse" uid="46" />
     </global-instances>
     <sounds-folder />
     <music-folder />

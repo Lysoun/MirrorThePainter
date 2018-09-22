@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="BackgroundTile" uid="19">
+                <instance type="BackgroundTile" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -49,7 +49,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SolidTile" uid="21">
+                <instance type="SolidTile" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -133,7 +133,9 @@
                 <instance type="SpeedTile" uid="42">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Solid">
@@ -151,8 +153,8 @@
                         <width>289</width>
                         <height>39</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -197,7 +199,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <MaxSpeed>200</MaxSpeed>
+                        <CurrentMaxSpeed>300</CurrentMaxSpeed>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
