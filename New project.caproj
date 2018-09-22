@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
@@ -124,6 +125,9 @@
                 <behavior-type name="ScrollTo" sid="645040882649124">
                     <behavior id="scrollto" />
                 </behavior-type>
+                <behavior-type name="8Direction" sid="841413029317323">
+                    <behavior id="EightDir" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="878173964654822" speed="5">
@@ -131,35 +135,15 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SpeedTile" sid="295784205276957">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
         <object-type name="9patch" sid="357363368926619">
             <plugin id="NinePatch" />
             <texture />
         </object-type>
-        <object-type name="Sprite2" sid="233683627031498">
+        <object-type name="SpeedTile" sid="311740800479668">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874859997009489" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666622668779521" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="180442148504960">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="TiledBackground2" sid="754691295174436">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="BackgroundTile2" sid="906720056678661">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="895410271087873" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\GAMER\Documents\GitHub\MirrorThePainter\Textures\BackgroundTile.png" />
                 </animation>
             </animation-folder>
         </object-type>

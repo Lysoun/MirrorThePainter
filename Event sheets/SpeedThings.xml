@@ -4,13 +4,16 @@
     <name>SpeedThings</name>
     <events>
         <comment>Player faster on orange platforms</comment>
-        <event-block sid="602072320431947">
+        <event-block sid="730270441204074">
             <conditions>
-                <condition behavior="Platform" id="2" name="Is on floor" sid="287140059961171" type="Player" />
+                <condition id="0" name="On collision with another object" sid="607183844482112" type="SpeedTile">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="975984770513374" type="Player" />
             </conditions>
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="140203954110728" type="Player">
-                    <param id="0" name="Max Speed">3000</param>
+                <action id="6" name="Set speed" sid="981525077297336" type="Player">
+                    <param id="0" name="Speed">12000</param>
                 </action>
             </actions>
         </event-block>
