@@ -12,11 +12,35 @@
                 <condition behavior="Platform" id="2" name="Is on floor" sid="947683775878980" type="Player" />
             </conditions>
             <actions>
-                <action behavior="Platform" id="1" name="Set max speed" sid="981525077297336" type="Player">
+                <action behavior="Platform" id="1" name="Set max speed" sid="192045399040168" type="Player">
                     <param id="0" name="Max Speed">600</param>
                 </action>
-                <action behavior="Platform" id="2" name="Set acceleration" sid="192045399040168" type="Player">
-                    <param id="0" name="Acceleration">1100</param>
+            </actions>
+        </event-block>
+        <comment>Back to normal when touching other platforms</comment>
+        <event-block sid="709111314736921">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="795043332749606" type="JumpTile">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="417113644009606" type="Player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="391724818558872" type="Player">
+                    <param id="0" name="Max Speed">300</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="152619113844763">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="345101864132419" type="Player">
+                    <param id="0" name="Object">SolidTile</param>
+                </condition>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="460579351689188" type="Player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="521551189130969" type="Player">
+                    <param id="0" name="Max Speed">300</param>
                 </action>
             </actions>
         </event-block>

@@ -13,7 +13,21 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="498247843232780" type="System">
-                    <param id="0" name="Layout">Test Level</param>
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="525708228066024">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="398083232090384" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Credits</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="793842480646165" type="System">
+                    <param id="0" name="Layout">Credits</param>
                 </action>
             </actions>
         </event-block>

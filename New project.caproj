@@ -157,7 +157,7 @@
         <object-type name="GreenFinish" sid="804332162215298">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Text" sid="405881034705524">
+        <object-type name="Credits" sid="405881034705524">
             <plugin id="Text" />
         </object-type>
         <object-type name="CreditsText" sid="678127124330673">
