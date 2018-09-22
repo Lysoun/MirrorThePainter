@@ -163,6 +163,15 @@
         <object-type name="GreenFinish" sid="804332162215298">
             <plugin id="Text" />
         </object-type>
+<object-type name="Text" sid="405881034705524">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CreditsText" sid="678127124330673">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BackToMenu" sid="995271520178801">
+            <plugin id="Text" />
+        </object-type>
         <object-type name="JumpTile" sid="425385557452838">
             <plugin id="Sprite" />
             <behaviors>
@@ -184,6 +193,7 @@
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
         <layout>Level 3.xml</layout>
+	<layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>BasicControls.xml</event-sheet>
@@ -193,6 +203,7 @@
         <event-sheet>TestLevel events.xml</event-sheet>
         <event-sheet>Level 3 events.xml</event-sheet>
         <event-sheet>JumpThings.xml</event-sheet>
+	<event-sheet>Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="24" />
